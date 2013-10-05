@@ -1,0 +1,9 @@
+bin/composer
+bin/jsonlint
+bin/pdepend
+bin/phpcpd
+bin/phpcs
+bin/phpmd
+bin/phpunit
+composer.lock
+vendor/
