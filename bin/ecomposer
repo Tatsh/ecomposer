@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+if (PHP_SAPI !== 'cli') {
+    printf('Warning: Composer should be invoked via the CLI version of PHP, not the %s SAPI%s', PHP_SAPI, PHP_EOL);
+    exit(1);
+}
+
+require __DIR__.'/../src/bootstrap.php';
+
+use Symfony\Component\Console\Application;
+use EComposer\Command\GenerateEbuildCommand;
+
+$app = new Application();
+
+$app->add(new GenerateEbuildCommand());
+$app->run();

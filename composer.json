@@ -1,0 +1,35 @@
+{
+    "name": "tatsh/ecomposer",
+    "type": "library",
+    "description": "Creates ebuilds for Composer packages",
+    "keywords": ["library"],
+    "homepage": "https://github.com/tatsh/ecomposer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Udvare",
+            "email": "audvare@gmail.com",
+            "homepage": "http://andrew.udvare.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "composer/composer": "dev-master",
+        "symfony/process": "dev-master",
+        "symfony/console": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "dev-master",
+        "phpmd/phpmd": "dev-master",
+        "sebastian/phpcpd": "dev-master",
+        "squizlabs/php_codesniffer": "dev-master",
+        "instaclick/symfony2-coding-standard": "dev-remaster"
+    },
+    "autoload": {
+        "psr-0": { "EComposer\\": "src/" }
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "bin-dir": "bin"
+    }
+}
